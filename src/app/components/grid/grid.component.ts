@@ -1,4 +1,5 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 import { Subscription } from 'rxjs';
 import { RULES } from '../../constants/rules';
 import { Student } from '../../models/student';
@@ -11,7 +12,7 @@ import { GridRowComponent } from '../grid-row/grid-row.component';
   selector: 'ba-grid',
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.scss'],
-  imports: [GridHeaderComponent, GridRowComponent],
+  imports: [CommonModule, GridHeaderComponent, GridRowComponent], // Add CommonModule here
 })
 export class GridComponent implements OnInit, OnDestroy {
   answer: Student | null = null;
@@ -33,6 +34,7 @@ export class GridComponent implements OnInit, OnDestroy {
         this.cdr.markForCheck();
       })
     );
+    console.log(this.guesses)
   }
 
   ngOnDestroy() {
@@ -58,9 +60,9 @@ export class GridComponent implements OnInit, OnDestroy {
       return;
     }
     let currentGuesses = currentGuessesId.map((id) => currentStudents[id]);
-    currentGuesses = currentGuesses.concat(
-      Array(RULES.MAX_GUESSES - currentGuesses.length).fill(null)
-    );
+    // currentGuesses = currentGuesses.concat(
+    //   Array(RULES.MAX_GUESSES - currentGuesses.length).fill(null)
+    // );
     this.guesses = currentGuesses;
   }
 

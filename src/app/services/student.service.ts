@@ -73,9 +73,6 @@ export class StudentService {
     student: Student,
     students: StudentData
   ): Student {
-    while (student.disabled) {
-      student = this.getStudent(students, student.fullName);
-    }
     return student;
   }
 }

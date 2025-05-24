@@ -11,7 +11,7 @@ describe('ChangeLogsDialogComponent', () => {
   let dialogRefSpy: jasmine.SpyObj<MatDialogRef<ChangeLogsDialogComponent>>;
 
   const mockChangeLogs = `
-  # Bardle
+  # Mhadle
 
   ## Version 2.4.0
 

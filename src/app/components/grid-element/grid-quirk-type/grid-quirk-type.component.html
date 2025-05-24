@@ -1,0 +1,14 @@
+<ba-grid-element-container
+  [isFlipped]="getFlipString()"
+  [animationDelayMs]="animationDelayMs"
+  [won]="guess === answer"
+>
+  @if(guess) {
+  <div
+    [ngClass]="[correctGuess() ? 'correct-no-text' : 'incorrect-no-text']"
+    class="normal-weapon-type flex items-center justify-center text-center overflow-hidden h-full"
+  >
+    <span class="block text-black">{{ quirkType }}</span>
+  </div>
+  }
+</ba-grid-element-container>

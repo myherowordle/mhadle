@@ -129,6 +129,6 @@ describe('GuessInputComponent', () => {
 
     const filteredStudents = component['_filter']('アル');
     expect(filteredStudents.length).toBe(1);
-    expect(filteredStudents[0].nativeName).toBe(aru.nativeName);
+    expect(filteredStudents[0].fullName).toBe(aru.fullName);
   });
 });

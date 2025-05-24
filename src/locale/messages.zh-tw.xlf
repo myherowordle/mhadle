@@ -2,31 +2,31 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" target-language="zh-Hant" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="BardlePageName" datatype="html">
-        <source>Bardle - Blue Archive Wordle Guessing Game</source>
-        <target>Bardle - 藍色存檔 Wordle 猜字遊戲</target>
-        <note priority="1" from="description">Bardle Page Name</note>
-        <note priority="1" from="meaning">Bardle</note>
+      <trans-unit id="MhadlePageName" datatype="html">
+        <source>Mhadle - My Hero Academia Wordle Guessing Game</source>
+        <target>Mhadle - 藍色存檔 Wordle 猜字遊戲</target>
+        <note priority="1" from="description">Mhadle Page Name</note>
+        <note priority="1" from="meaning">Mhadle</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.routes.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="BardleAboutPageName" datatype="html">
-        <source>Bardle - About</source>
-        <target>Bardle - 關於</target>
-        <note priority="1" from="description">Bardle - About Page Name</note>
-        <note priority="1" from="meaning">Bardle - About</note>
+      <trans-unit id="MhadleAboutPageName" datatype="html">
+        <source>Mhadle - About</source>
+        <target>Mhadle - 關於</target>
+        <note priority="1" from="description">Mhadle - About Page Name</note>
+        <note priority="1" from="meaning">Mhadle - About</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.routes.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="BardleContactPageName" datatype="html">
-        <source>Bardle - Contact</source>
-        <target>Bardle - 聯絡人</target>
-        <note priority="1" from="description">Bardle - Contact Page Name</note>
-        <note priority="1" from="meaning">Bardle - Contact</note>
+      <trans-unit id="MhadleContactPageName" datatype="html">
+        <source>Mhadle - Contact</source>
+        <target>Mhadle - 聯絡人</target>
+        <note priority="1" from="description">Mhadle - Contact Page Name</note>
+        <note priority="1" from="meaning">Mhadle - Contact</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.routes.ts</context>
           <context context-type="linenumber">27</context>
@@ -35,7 +35,7 @@
       <trans-unit id="StudentGrid" datatype="html">
         <source>Student</source>
         <target>學生</target>
-        <note priority="1" from="description">Header for student grid</note>
+        <note priority="1" from="description">Header for character grid</note>
         <note priority="1" from="meaning">Student</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/grid-header/grid-header.component.ts</context>
@@ -125,7 +125,7 @@
       <trans-unit id="StudentNameSearchLabel" datatype="html">
         <source>Student name</source>
         <target>學生姓名</target>
-        <note priority="1" from="description">Label for student search</note>
+        <note priority="1" from="description">Label for character search</note>
         <note priority="1" from="meaning">Student name</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/guess-input/guess-input.component.html</context>
@@ -135,7 +135,7 @@
       <trans-unit id="StudentNamePlaceholder" datatype="html">
         <source>Name</source>
         <target>名稱</target>
-        <note priority="1" from="description">Placeholder for student name</note>
+        <note priority="1" from="description">Placeholder for character name</note>
         <note priority="1" from="meaning">Name</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/guess-input/guess-input.component.html</context>
@@ -214,21 +214,21 @@
         </context-group>
       </trans-unit>
       <trans-unit id="StudentCountdownLabel" datatype="html">
-        <source> Next student in <x id="START_TAG_COUNTDOWN" ctype="x-countdown" equiv-text="&lt;countdown [config]=&quot;countdownConfig&quot;&gt;"/><x id="CLOSE_TAG_COUNTDOWN" ctype="x-countdown" equiv-text="&lt;/countdown&gt;"/></source>
+        <source> Next character in <x id="START_TAG_COUNTDOWN" ctype="x-countdown" equiv-text="&lt;countdown [config]=&quot;countdownConfig&quot;&gt;"/><x id="CLOSE_TAG_COUNTDOWN" ctype="x-countdown" equiv-text="&lt;/countdown&gt;"/></source>
         <target> 下一位學生 <x id="START_TAG_COUNTDOWN" ctype="x-countdown" equiv-text="&lt;countdown [config]=&quot;countdownConfig&quot;&gt;"/><x id="CLOSE_TAG_COUNTDOWN" ctype="x-countdown" equiv-text="&lt;/countdown&gt;"/></target>
         <note priority="1" from="description">Countdown label for next
-          student</note>
-        <note priority="1" from="meaning">Next student in</note>
+          character</note>
+        <note priority="1" from="meaning">Next character in</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/result/result.component.html</context>
           <context context-type="linenumber">13,16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="SolutionLabel" datatype="html">
-        <source> The searched student was </source>
+        <source> The searched character was </source>
         <target> 被搜查的學生是  </target>
         <note priority="1" from="description">Solution label</note>
-        <note priority="1" from="meaning">The searched student was</note>
+        <note priority="1" from="meaning">The searched character was</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/result/result.component.html</context>
           <context context-type="linenumber">22,25</context>
@@ -245,54 +245,54 @@
         </context-group>
       </trans-unit>
       <trans-unit id="TutorialTitle" datatype="html">
-        <source> Blue Archive Wordle </source>
+        <source> My Hero Academia Wordle </source>
         <target> 藍色檔案 Wordle </target>
         <note priority="1" from="description">Title of the game in the tutorial</note>
-        <note priority="1" from="meaning">Blue Archive Wordle</note>
+        <note priority="1" from="meaning">My Hero Academia Wordle</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tutorial/tutorial.component.html</context>
           <context context-type="linenumber">11,16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="TutorialFirst" datatype="html">
-        <source> Guess today&apos;s Blue Archive student! </source>
+        <source> Guess today&apos;s My Hero Academia character! </source>
         <target> 猜猜今天的藍色存檔學生！ </target>
         <note priority="1" from="description">First line of
           tutorial</note>
-        <note priority="1" from="meaning">Guess today&apos;s Blue Archive student!</note>
+        <note priority="1" from="meaning">Guess today&apos;s My Hero Academia character!</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tutorial/tutorial.component.html</context>
           <context context-type="linenumber">20,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="TutorialSecond" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;correct-text font-bold&quot;&gt;"/>Green<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> means same as searched student. </source>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;correct-text font-bold&quot;&gt;"/>Green<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> means same as searched character. </source>
         <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;correct-text font-bold&quot;&gt;"/>綠色<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>表示與搜索的學生相同。 </target>
         <note priority="1" from="description">Second line of
           tutorial</note>
-        <note priority="1" from="meaning">Green means same as searched student.</note>
+        <note priority="1" from="meaning">Green means same as searched character.</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tutorial/tutorial.component.html</context>
           <context context-type="linenumber">29,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="TutorialThird" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;incorrect-text font-bold&quot;&gt;"/>Grey<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> means different from searched student. </source>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;incorrect-text font-bold&quot;&gt;"/>Grey<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> means different from searched character. </source>
         <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;incorrect-text font-bold&quot;&gt;"/>灰色<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>表示與搜尋過的學生不同。</target>
         <note priority="1" from="description">Third line of
           tutorial</note>
-        <note priority="1" from="meaning">Grey means different from searched student.</note>
+        <note priority="1" from="meaning">Grey means different from searched character.</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tutorial/tutorial.component.html</context>
           <context context-type="linenumber">39,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="TutorialFourth" datatype="html">
-        <source> Type any student&apos;s name to begin. </source>
+        <source> Type any character&apos;s name to begin. </source>
         <target>輸入任何學生的姓名開始。</target>
         <note priority="1" from="description">Fourth line of
           tutorial</note>
-        <note priority="1" from="meaning">Type any student&apos;s name to begin.</note>
+        <note priority="1" from="meaning">Type any character&apos;s name to begin.</note>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tutorial/tutorial.component.html</context>
           <context context-type="linenumber">49,54</context>
@@ -309,23 +309,23 @@
         </context-group>
       </trans-unit>
       <trans-unit id="TutorialSixth" datatype="html">
-        <source> Press <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;material-icons&quot;&gt;"/>refresh<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> to guess a new student! </source>
+        <source> Press <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;material-icons&quot;&gt;"/>refresh<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> to guess a new character! </source>
         <target> 按 <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;material-icons&quot;&gt;"/>refresh<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> 猜一个新学生！ </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tutorial/tutorial.component.html</context>
           <context context-type="linenumber">66,68</context>
         </context-group>
         <note priority="1" from="description">Sixth line of tutorial</note>
-        <note priority="1" from="meaning">Press to guess a new student</note>
+        <note priority="1" from="meaning">Press to guess a new character</note>
       </trans-unit>
       <trans-unit id="YesterdaysStudentLabel" datatype="html">
-        <source> Yesterdays student was </source>
+        <source> Yesterdays character was </source>
         <target> 昨天的學生是 </target>
-        <note priority="1" from="description">Yesterdays student
+        <note priority="1" from="description">Yesterdays character
           label</note>
-        <note priority="1" from="meaning">Yesterdays student was</note>
+        <note priority="1" from="meaning">Yesterdays character was</note>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/yesterdays-student/yesterdays-student.component.html</context>
+          <context context-type="sourcefile">src/app/components/yesterdays-character/yesterdays-character.component.html</context>
           <context context-type="linenumber">13,17</context>
         </context-group>
       </trans-unit>

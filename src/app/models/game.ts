@@ -6,7 +6,7 @@ export type GameResult = Record<
   string,
   {
     won?: boolean;
-    lost?: boolean;
+    giveUp?: boolean;
   }
 >;
 

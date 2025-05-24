@@ -1,0 +1,17 @@
+
+.block {
+    display: block; /* Ensure the span behaves like a block element */
+    word-wrap: break-word; /* Allow breaking long words */
+    white-space: normal; /* Allow text wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    transition: font-size 0.01s ease-in-out; /* Smooth font size transition */
+  }
+  
+  .flex {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    overflow: hidden; /* Hide overflowing content */
+    height: 100%; /* Ensure the parent takes up full height */
+  }

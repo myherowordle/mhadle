@@ -20,7 +20,7 @@ import { CopyButtonComponent } from '../copy-button/copy-button.component';
 })
 export class ResultComponent {
   @Input() won = false;
-  @Input() lost = false;
+  @Input() giveUp = false;
   @Input() displayCopyButton = true;
   @Input() displayNextStudentCountdown = true;
   @Input() displayRefreshButton = false;

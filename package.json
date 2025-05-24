@@ -1,5 +1,5 @@
 {
-  "name": "bardle",
+  "name": "mhadle",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
     "@tailwindcss/postcss": "^4.0.3",
+    "@vercel/analytics": "^1.5.0",
     "marked": "^15.0.7",
     "ngx-countdown": "^19.0.0",
     "ngx-markdown": "^19.1.0",

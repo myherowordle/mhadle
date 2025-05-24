@@ -51,7 +51,7 @@ export class CopyButtonComponent {
     });
     const daysSinceLaunch = timeActive();
 
-    let scoreReport = `Daily Blue Archive Wordle #${daysSinceLaunch} ${date} on https://bardle.net.\n`;
+    let scoreReport = `Daily My Hero Academia Wordle #${daysSinceLaunch} ${date} on https://mhadle.net.\n`;
     scoreReport += `Student list: ${this.gameService.getCurrentList()} students\n`;
     scoreReport += `I guessed the student in ${attempts} attempt${
       attempts > 1 ? 's' : ''

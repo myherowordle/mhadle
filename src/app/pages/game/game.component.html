@@ -1,10 +1,12 @@
 <div class="pt-12">
-  <ba-student-list-selection
-    [disabled]="infiniteMode"
-  ></ba-student-list-selection>
-  <ba-guess-input></ba-guess-input>
+  <ba-guess-input></ba-guess-input> 
+  @if (won || giveUp || infiniteMode) {
+    <ba-infinte-mode
+      (infiniteMode)="onInfiniteModeChange($event)"
+    ></ba-infinte-mode>
+  }
   <ba-result
-    [lost]="lost"
+    [giveUp]="giveUp"
     [won]="won"
     [displayCopyButton]="!infiniteMode"
     [displayNextStudentCountdown]="!infiniteMode"
@@ -20,14 +22,15 @@
     [displayCopyButton]="!infiniteMode"
     [displayRefreshButton]="infiniteMode"
   ></ba-tutorial>
-  } @if ((!gameStarted || won || lost) && !infiniteMode) {
+  } @if ((!gameStarted || won || giveUp) && !infiniteMode) {
   <ba-yesterdays-student
     [student]="yesterdayStudent"
     [display]="true"
   ></ba-yesterdays-student>
-  } @if (won || lost || infiniteMode) {
-  <ba-infinte-mode
-    (infiniteMode)="onInfiniteModeChange($event)"
-  ></ba-infinte-mode>
+  }
+  @if (gameStarted && !won && !giveUp) {
+    <ba-give-up
+      (giveUp)="onGiveUpChange()"
+    ></ba-give-up>
   }
 </div>

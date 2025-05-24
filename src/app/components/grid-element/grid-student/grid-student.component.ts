@@ -1,5 +1,6 @@
 import { NgClass, NgOptimizedImage } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef } from '@angular/core';
+import { ChangeDetectorRef } from '@angular/core';
 import { AssetService } from '../../../services/web/asset.service';
 import { GridElementComponent } from '../grid-element.component';
 import { GridElementContainerComponent } from '../grid-wrapper/grid-element-container.component';
@@ -12,8 +13,12 @@ import { GridElementContainerComponent } from '../grid-wrapper/grid-element-cont
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GridStudentComponent extends GridElementComponent {
-  constructor(public readonly assetService: AssetService) {
-    super();
+  constructor(
+    public readonly assetService: AssetService,
+    elRef: ElementRef,
+    cdr: ChangeDetectorRef
+  ) {
+    super(elRef, cdr); // Pass dependencies to the parent class
   }
 
   override correctGuess() {

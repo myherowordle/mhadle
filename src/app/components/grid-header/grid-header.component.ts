@@ -11,38 +11,66 @@ import { GridHeaderElementComponent } from './grid-header-element/grid-header-el
 })
 export class GridHeaderComponent {
   get student() {
+    return 'Character'
     return $localize`:Student|Header for student grid@@StudentGrid:Student`;
   }
 
-  get school() {
+  get alias() {
+    return 'Alias'
+    return $localize`:Student|Header for student grid@@StudentGrid:Student`;
+  }
+
+  get affiliation() {
+    return 'Affiliation'
     return $localize`:School|Header for school grid@@SchoolGrid:School`;
   }
 
-  get role() {
+  get occupation() {
+    return 'Occupation'
     return $localize`:Role|Header for role grid@@RoleGrid:Role`;
   }
 
-  get damageType() {
+  get age() {
+    return 'Age'
     return $localize`:Damage Type|Header for damage type grid@@DamageTypeGrid:Damage Type`;
   }
 
-  get armorType() {
+  get gender() {
+    return 'Gender'
     return $localize`:Armor Type|Header for armor type grid@@ArmorTypeGrid:Armor Type`;
   }
 
-  get exSkillCost() {
+  get quirkType() {
+    return 'Quirk Type'
     return $localize`:Ex Skill Cost|Header for ex skill cost grid@@ExSkillCostGrid:Ex Skill Cost`;
   }
 
-  get birthday() {
+  get eyeColor() {
+    return 'Eye Color'
     return $localize`:Birthday|Header for birthday grid@@BirthdayGrid:Birthday`;
   }
 
-  get releaseDate() {
+  get quirk() {
+    return 'Quirk'
+    return $localize`:Birthday|Header for birthday grid@@BirthdayGrid:Birthday`;
+  }
+
+  get manga() {
+    return 'First Chapter Appearance'
     return $localize`:Release Date|Header for release date grid@@ReleaseDateGrid:Release Date`;
   }
 
-  get weaponType() {
+  get hairColor() {
+    return 'Hair Color'
     return $localize`:Weapon Type|Header for weapon type grid@@WeaponTypeGrid:Weapon Type`;
+  }
+
+  get height() {
+    return 'Height'
+    return $localize`:Weapon Type|Header for weapon type grid@@WeaponTypeGrid:Weapon Type`;
+  }
+
+  get mangaClass() {
+    return 'text-[0.7rem] md:text-sm'
   }
 }

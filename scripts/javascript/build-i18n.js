@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const fse = require('fs-extra');
 
-const configurations = ['ja', 'ko', 'zh', 'en-US'];
-const distFolder = path.join(__dirname, '../../dist/bardle/browser');
+const configurations = ['en-US'];
+const distFolder = path.join(__dirname, '../../dist/mhadle/browser');
 const tempFolder = path.join(__dirname, '../../temp');
 
 async function runBuild(config) {

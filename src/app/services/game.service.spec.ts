@@ -35,6 +35,7 @@ describe('GameService', () => {
       },
       doy: -1,
       lastList: DEFAULT_STUDENT_LIST,
+      giveUp: false,
     });
 
     studentServiceSpy.getStudentData.and.returnValue(
@@ -80,10 +81,11 @@ describe('GameService', () => {
         },
         doy: jasmine.any(Number),
         lastList: DEFAULT_STUDENT_LIST,
+        giveUp: false,
       });
       expect(gameState?.result).toEqual({
-        japan: { won: false, lost: false },
-        global: { won: false, lost: false },
+        japan: { won: false, giveUp: false },
+        global: { won: false, giveUp: false },
       });
     });
 
@@ -97,6 +99,7 @@ describe('GameService', () => {
         guesses: { japan: ['test'], global: [] },
         doy: 1,
         lastList: StudentList.JAPAN,
+        giveUp: false,
       };
       service.setGuess(guess);
       expect(localStorageSpy.setGuess).toHaveBeenCalledWith(guess);
@@ -113,21 +116,22 @@ describe('GameService', () => {
     it('should trigger lost condition if max guesses are exceeded', () => {
       const guess: GuessCookie = {
         guesses: {
-          japan: Array(RULES.MAX_GUESSES).fill('wrong'),
+          //japan: Array(RULES.MAX_GUESSES).fill('wrong'),
           global: [],
         },
         doy: 1,
         lastList: StudentList.JAPAN,
+        giveUp: true,
       };
       spyOn(service, 'setResult');
       service.setGuess(guess);
-      expect(service.getCurrentResult()).toEqual({ won: false, lost: true });
+      expect(service.getCurrentResult()).toEqual({ won: false, giveUp: true });
     });
 
     it('should trigger won condition if guess is correct', () => {
       spyOn(service, 'setResult');
       service.addGuess(studentOfTheDay.id);
-      expect(service.getCurrentResult()).toEqual({ won: true, lost: false });
+      expect(service.getCurrentResult()).toEqual({ won: true, giveUp: false });
     });
 
     it('should get current guesses', () => {
@@ -137,7 +141,7 @@ describe('GameService', () => {
 
     it('should get current result', () => {
       service.addGuess(studentOfTheDay.id);
-      expect(service.getCurrentResult()).toEqual({ won: true, lost: false });
+      expect(service.getCurrentResult()).toEqual({ won: true, giveUp: false });
     });
 
     it('should get current student', () => {
@@ -154,11 +158,12 @@ describe('GameService', () => {
         guesses: { japan: [], global: [] },
         doy: 1,
         lastList: StudentList.JAPAN,
+        giveUp: true,
       });
       expect(service['gameStateChange'].next).toHaveBeenCalled();
       service.setResult({
-        japan: { won: false, lost: false },
-        global: { won: false, lost: false },
+        japan: { won: false, giveUp: false },
+        global: { won: false, giveUp: false },
       });
       expect(service['gameStateChange'].next).toHaveBeenCalled();
     });

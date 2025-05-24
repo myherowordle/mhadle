@@ -23,7 +23,7 @@ export class YesterdaysStudentComponent {
 
   get studentName(): string {
     if (this.translateService.getCurrentLang().code === 'ja') {
-      return this.student ? this.student.nativeName : '';
+      return this.student ? this.student.fullName : '';
     }
     return this.student ? this.student.fullName : '';
   }

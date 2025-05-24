@@ -1,0 +1,17 @@
+<ba-grid-element-container
+  [isFlipped]="getFlipString()"
+  [animationDelayMs]="animationDelayMs"
+  [won]="guess === answer"
+>
+  @if (guess) {
+  <div
+    [ngClass]="[
+      guess.alias | dashCase,
+      correctGuess() ? 'correct-no-text' : 'incorrect-no-text'
+    ]"
+    class="flex items-center justify-center text-center h-full"
+  >
+    <span class="block">{{ alias }}</span>
+  </div>
+  }
+</ba-grid-element-container>

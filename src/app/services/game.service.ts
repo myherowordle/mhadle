@@ -83,30 +83,34 @@ export class GameService {
     this.initializeGameState();
   }
 
+  setGiveUp() {
+    if (this.gameState === null || !this.isInitialized) {
+      return;
+    } 
+    this.gameState.result[this.gameState.activeList].giveUp = true;
+    console.log('red', this.gameState);
+    this.gameStateChange.next(this.gameState);
+    if (!this.infiniteMode) {
+      const guesses = { ...this.gameState.guesses };
+      console.log('blue', this.localStorage.getGuess());
+      guesses.giveUp = true;
+      this.setGuess(guesses);
+    }
+  }
+
   addGuess(guess: string) {
     if (this.gameState === null || !this.isInitialized) {
       return;
     }
     if (
       this.gameState.result[this.gameState.activeList].won ||
-      this.gameState.result[this.gameState.activeList].lost
+      this.gameState.result[this.gameState.activeList].giveUp
     ) {
       return;
     }
     const guesses = { ...this.gameState.guesses };
     guesses.guesses[this.gameState.activeList].push(guess);
     this.setGuess(guesses);
-    if (
-      guesses.guesses[this.gameState.activeList].length >= RULES.MAX_GUESSES
-    ) {
-      this.setResult({
-        ...this.gameState.result,
-        [this.gameState.activeList]: {
-          lost: true,
-          ...this.gameState.result[this.gameState.activeList],
-        },
-      });
-    }
     if (guess === this.gameState.answer[this.gameState.activeList]) {
       this.setResult({
         ...this.gameState.result,
@@ -214,6 +218,7 @@ export class GameService {
       },
       doy: this.doy,
       lastList: lastList ?? this.createInitialListSelection(),
+      giveUp: false,
     };
   }
 
@@ -223,26 +228,24 @@ export class GameService {
       const listEnum = list as StudentList;
       if (Object.prototype.hasOwnProperty.call(gameAnswer, listEnum)) {
         const guesses: string[] = guess.guesses[listEnum];
-        const lost = guesses.length >= RULES.MAX_GUESSES;
+        const giveUp = guess.giveUp;
         gameResult[listEnum] = {
           won: guesses.includes(gameAnswer[listEnum]),
-          lost: lost,
+          giveUp: giveUp,
         };
       }
     }
     let guesses: string[] = guess.guesses[StudentList.JAPAN];
-    let lost = guesses.length >= RULES.MAX_GUESSES;
     let won = guesses.includes(gameAnswer[StudentList.JAPAN]);
     gameResult[StudentList.JAPAN] = {
       won: won,
-      lost: lost,
+      giveUp: guess.giveUp,
     };
     guesses = guess.guesses[StudentList.GLOBAL];
-    lost = guesses.length >= RULES.MAX_GUESSES;
     won = guesses.includes(gameAnswer[StudentList.GLOBAL]);
     gameResult[StudentList.GLOBAL] = {
       won: won,
-      lost: lost,
+      giveUp: guess.giveUp,
     };
     return gameResult;
   }

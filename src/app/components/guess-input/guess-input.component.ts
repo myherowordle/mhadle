@@ -55,7 +55,7 @@ export class GuessInputComponent implements OnInit, OnDestroy {
         const data = this.gameService.getCurrentStudentData();
         if (data) {
           this.students = Object.values(data);
-          this.students.sort((a, b) => a.shortName.localeCompare(b.shortName));
+          this.students.sort((a, b) => a.fullName.localeCompare(b.fullName));
         } else {
           this.students = [];
         }
@@ -83,9 +83,19 @@ export class GuessInputComponent implements OnInit, OnDestroy {
 
   getDisplayName(student: Student): string {
     if (this.translateService.getCurrentLang().code === 'ja') {
-      return student.nativeName;
+      return student.fullName;
     }
     return student.fullName;
+  }
+
+  getDisplayAlias(student: Student): string {
+    if (student.alias == "null") {
+      return '';
+    }
+    if (this.translateService.getCurrentLang().code === 'ja') {
+      return student.alias;
+    }
+    return student.alias;
   }
 
   private _filter(value: string): Student[] {
@@ -96,7 +106,8 @@ export class GuessInputComponent implements OnInit, OnDestroy {
     }
     return this.students.filter(
       (student) =>
-        this.getDisplayName(student).toLowerCase().includes(filterValue) &&
+        (this.getDisplayName(student).toLowerCase().includes(filterValue) ||
+          (student.alias && student.alias.toLowerCase().includes(filterValue))) &&
         !currentGuesses.some((guess) => guess === student.id)
     );
   }
@@ -112,7 +123,7 @@ export class GuessInputComponent implements OnInit, OnDestroy {
   private checkGameResult() {
     const latestList = this.gameService.getCurrentList();
     const result = this.gameService.getCurrentResult();
-    if (latestList && result && (result.won || result.lost)) {
+    if (latestList && result && (result.won || result.giveUp)) {
       this.guessInputControl.disable();
     } else {
       this.guessInputControl.enable();

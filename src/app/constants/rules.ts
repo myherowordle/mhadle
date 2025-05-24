@@ -1,8 +1,8 @@
 export const RULES = {
-  MAX_GUESSES: 5,
+  //MAX_GUESSES: 10,
   LAUNCH_DATE: new Date('6 May 2024'),
 };
-
+//TODO
 export const NON_EVENT_SCHOOLS = [
   'Abydos',
   'Arius',
@@ -14,5 +14,4 @@ export const NON_EVENT_SCHOOLS = [
   'Shanhaijing',
   'Trinity',
   'Valkyrie',
-  'Highlander',
 ];

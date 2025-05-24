@@ -6,14 +6,14 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/game/game.component').then((m) => m.GameComponent),
     data: { animation: 'HomePage' },
-    title: $localize`:Bardle|Bardle Page Name@@BardlePageName:Bardle - Blue Archive Wordle Guessing Game`,
+    title: $localize`:Mhadle|Mhadle Page Name@@MhadlePageName:Mhadle - My Hero Academia Wordle Guessing Game`,
   },
   {
     path: 'about',
     loadComponent: () =>
       import('./pages/about/about.component').then((m) => m.AboutComponent),
     data: { animation: 'AboutPage' },
-    title: $localize`:Bardle - About|Bardle - About Page Name@@BardleAboutPageName:Bardle - About`,
+    title: $localize`:Mhadle - About|Mhadle - About Page Name@@MhadleAboutPageName:Mhadle - About`,
   },
   {
     path: 'contact',
@@ -22,7 +22,7 @@ export const routes: Routes = [
         (m) => m.ContactComponent
       ),
     data: { animation: 'ContactPage' },
-    title: $localize`:Bardle - Contact|Bardle - Contact Page Name@@BardleContactPageName:Bardle - Contact`,
+    title: $localize`:Mhadle - Contact|Mhadle - Contact Page Name@@MhadleContactPageName:Mhadle - Contact`,
   },
   {
     path: '**',

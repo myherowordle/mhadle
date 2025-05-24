@@ -1,0 +1,19 @@
+<ba-grid-element-container
+  [isFlipped]="getFlipString()"
+  [animationDelayMs]="animationDelayMs"
+  [won]="guess === answer"
+>
+  @if (guess && answer) {
+  <div
+    [ngClass]="[
+    (guess.manga === -1 || answer.manga === -1) ? 'text-black' : 'text-white',
+    correctGuess() ? 'correct' : 'incorrect',
+    (answer.manga > guess.manga && answer.manga !== -1 && guess.manga !== -1) ? 'arrow-up' : '',
+    (answer.manga < guess.manga && answer.manga !== -1 && guess.manga !== -1) ? 'arrow-down' : ''
+  ]"
+    class="flex items-center justify-center text-center p-2 overflow-hidden h-full"
+  >
+    <span class="block">{{ manga }}</span>
+  </div>
+  }
+</ba-grid-element-container>

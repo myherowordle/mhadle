@@ -23,7 +23,7 @@ describe('ContactComponent', () => {
       .nativeElement as HTMLImageElement;
 
     expect(imgElement).toBeTruthy();
-    expect(imgElement.src).toContain('assets/images/logos/starsbit-black.png'); // Checks the image path
+    expect(imgElement.src).toContain('assets/images/logos/MHA-black.png'); // Checks the image path
     expect(imgElement.alt).toBe('starsbit logo'); // Ensures correct alt text
   });
 

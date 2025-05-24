@@ -9,8 +9,8 @@ import { Subscription } from 'rxjs';
 import { GridComponent } from '../../components/grid/grid.component';
 import { GuessInputComponent } from '../../components/guess-input/guess-input.component';
 import { InfinteModeComponent } from '../../components/infinte-mode/infinte-mode.component';
+import { GiveUpComponent } from '../../components/give-up/give-up.component';
 import { ResultComponent } from '../../components/result/result.component';
-import { StudentListSelectionComponent } from '../../components/student-list-selection/student-list-selection.component';
 import { TutorialComponent } from '../../components/tutorial/tutorial.component';
 import { YesterdaysStudentComponent } from '../../components/yesterdays-student/yesterdays-student.component';
 import { ChangeLogsDialogComponent } from '../../dialogs/change-logs/change-logs.component';
@@ -23,13 +23,13 @@ import { AssetService } from '../../services/web/asset.service';
 @Component({
   selector: 'ba-game',
   imports: [
+    GiveUpComponent,
     GridComponent,
-    StudentListSelectionComponent,
     GuessInputComponent,
+    InfinteModeComponent,
     TutorialComponent,
     YesterdaysStudentComponent,
     ResultComponent,
-    InfinteModeComponent,
   ],
   templateUrl: './game.component.html',
   styleUrl: './game.component.scss',
@@ -39,7 +39,7 @@ export class GameComponent implements OnInit, OnDestroy {
   private readonly subscriptions = new Subscription();
   private changeLogs = '';
   public won = false;
-  public lost = false;
+  public giveUp = false;
   public gameStarted = false;
   public infiniteMode = false;
   public yesterdayStudent: Student | null = null;
@@ -63,7 +63,7 @@ export class GameComponent implements OnInit, OnDestroy {
       })
     );
 
-    this.handleChangeLogDisplay(this.localStorage.getChangeLogReadDate());
+    //this.handleChangeLogDisplay(this.localStorage.getChangeLogReadDate());
   }
 
   ngOnDestroy() {
@@ -72,7 +72,7 @@ export class GameComponent implements OnInit, OnDestroy {
 
   get todaysStudentName(): string {
     if (this.translateService.getCurrentLang().code === 'ja') {
-      return this.todaysStudent ? this.todaysStudent.nativeName : '...';
+      return this.todaysStudent ? this.todaysStudent.fullName : '...';
     }
     return this.todaysStudent ? this.todaysStudent.fullName : '...';
   }
@@ -84,6 +84,10 @@ export class GameComponent implements OnInit, OnDestroy {
   onInfiniteModeChange(event: boolean) {
     this.infiniteMode = event;
     this.gameService.setInfiniteMode(this.infiniteMode);
+  }
+
+  onGiveUpChange() {
+    this.gameService.setGiveUp();
   }
 
   private handleGuessChange() {
@@ -99,11 +103,11 @@ export class GameComponent implements OnInit, OnDestroy {
     const gameResult = this.gameService.getCurrentResult();
     if (!gameResult) {
       this.won = false;
-      this.lost = false;
+      this.giveUp = false;
       return;
     }
     this.won = gameResult.won || false;
-    this.lost = gameResult.lost || false;
+    this.giveUp = gameResult.giveUp || false;
   }
 
   private handleYesterdayStudentChange() {

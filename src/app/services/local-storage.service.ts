@@ -38,6 +38,7 @@ export class LocalStorageService {
       },
       doy: -1,
       lastList: DEFAULT_STUDENT_LIST,
+      giveUp: false,
     };
   }
 

@@ -1,10 +1,6 @@
 .correct {
   background-color: #00a86b;
-  color: whitesmoke;
-
-  span {
-    color: whitesmoke;
-  }
+  color: black;
 }
 
 .correct-no-text {
@@ -13,11 +9,6 @@
 
 .incorrect {
   background-color: rgb(160, 160, 160);
-  color: whitesmoke;
-
-  span {
-    color: whitesmoke;
-  }
 }
 
 .incorrect-no-text {

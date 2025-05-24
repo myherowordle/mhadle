@@ -19,9 +19,9 @@ describe('TutorialComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should display the title "Blue Archive Wordle"', () => {
+  it('should display the title "My Hero Academia Wordle"', () => {
     const titleElement = fixture.debugElement.query(By.css('h1')).nativeElement;
-    expect(titleElement.textContent).toContain('Blue Archive Wordle');
+    expect(titleElement.textContent).toContain('My Hero Academia Wordle');
   });
 
   it('should contain tutorial instructions', () => {
@@ -30,7 +30,7 @@ describe('TutorialComponent', () => {
     );
     const texts = textElements.map((el) => el.nativeElement.textContent.trim());
 
-    expect(texts).toContain("Guess today's Blue Archive student!");
+    expect(texts).toContain("Guess today's My Hero Academia student!");
     expect(texts).toContain("Type any student's name to begin.");
     expect(texts).toContain('Press content_copy to copy your score!');
   });

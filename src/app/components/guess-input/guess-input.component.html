@@ -5,14 +5,14 @@
   >
     <mat-label
       i18n="Student name|Label for student search@@StudentNameSearchLabel"
-      >Student name</mat-label
+      >Character name</mat-label
     >
     <input
       i18n-placeholder="
         Name|Placeholder for student name@@StudentNamePlaceholder"
       type="text"
       placeholder="Name"
-      aria-label="Student name"
+      aria-label="Character name"
       matInput
       [formControl]="guessInputControl"
       [matAutocomplete]="auto"
@@ -30,7 +30,12 @@
           [alt]="getDisplayName(option)"
           class="portrait"
         />
-        {{ getDisplayName(option) }}
+        <div>
+          <div>{{ getDisplayName(option) }}</div>
+          <div class="text-gray-500 text-sm">
+            {{ getDisplayAlias(option) }}
+          </div>
+        </div>
       </mat-option>
       }
     </mat-autocomplete>

@@ -89,7 +89,7 @@ describe('CopyButtonComponent', () => {
       day: 'numeric',
     });
 
-    const expectedScore = `Daily Blue Archive Wordle #${daysActive} ${date} on https://bardle.net.\nStudent list: global students\nI guessed the student in 1 attempt and lost\n\n🟩🟩🟩⬜⬜🟩\n`;
+    const expectedScore = `Daily My Hero Academia Wordle #${daysActive} ${date} on https://mhadle.net.\nStudent list: global students\nI guessed the student in 1 attempt and lost\n\n🟩🟩🟩⬜⬜🟩\n`;
     expect(clipboardSpy.copy).toHaveBeenCalledWith(expectedScore);
   }));
 
@@ -110,7 +110,7 @@ describe('CopyButtonComponent', () => {
       month: 'short',
       day: 'numeric',
     });
-    const expectedScore = `Daily Blue Archive Wordle #${daysActive} ${date} on https://bardle.net.\nStudent list: global students\nI guessed the student in 1 attempt and won\n\n🟩🟩🟩🟩🟩🟩\n`;
+    const expectedScore = `Daily My Hero Academia Wordle #${daysActive} ${date} on https://mhadle.net.\nStudent list: global students\nI guessed the student in 1 attempt and won\n\n🟩🟩🟩🟩🟩🟩\n`;
     expect(clipboardSpy.copy).toHaveBeenCalledWith(expectedScore);
   }));
 

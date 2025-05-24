@@ -1,4 +1,4 @@
-@if (won || lost) {
+@if (won || giveUp) {
 <section class="flex justify-center items-center">
   <div class="md:w-140 w-80 p-1">
     <div
@@ -11,16 +11,16 @@
           Next student in|Countdown label for next
           student@@StudentCountdownLabel"
       >
-        Next student in
+        Next character in
         <countdown [config]="countdownConfig"></countdown>
       </p>
-      } @if (won || lost) {
+      } @if (won || giveUp) {
       <div class="flex items-center justify-center flex-col">
         <p
           class="text-xl text-white"
           i18n="The searched student was|Solution label@@SolutionLabel"
         >
-          The searched student was
+          The searched character was
         </p>
         <div class="flex flex-row items-center result-container">
           <img

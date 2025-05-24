@@ -1,4 +1,4 @@
-// filepath: /e:/projects/bardle/src/app/dialogs/change-logs/change-logs.component.ts
+// filepath: /e:/projects/mhadle/src/app/dialogs/change-logs/change-logs.component.ts
 import { Component, Inject } from '@angular/core';
 import {
   MAT_DIALOG_DATA,

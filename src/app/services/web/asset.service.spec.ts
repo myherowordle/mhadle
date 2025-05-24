@@ -32,9 +32,9 @@ describe('AssetService', () => {
 
   it('should return correct student icon location', () => {
     const student: Student = {
-      image: 'test-student.png',
-      school: 'TestSchool',
-      role: 'TestRole',
+      id: 'test-student.png',
+      affiliation: 'TestSchool',
+      occupation: 'TestRole',
     } as Student;
     expect(service.getStudentIconLocation(student)).toBe(
       '/en-US//assets/images/characters/test-student.png'
@@ -76,9 +76,9 @@ describe('AssetService', () => {
 
   it('should return correct school icon location', () => {
     const student: Student = {
-      image: 'test.png',
-      school: 'Test School',
-      role: 'TestRole',
+      id: 'test-student.png',
+      affiliation: 'TestSchool',
+      occupation: 'TestRole',
     } as Student;
     expect(service.getSchoolIconLocation(student)).toBe(
       '/en-US//assets/images/schools/Unknown.png'
@@ -87,9 +87,9 @@ describe('AssetService', () => {
 
   it('should return correct role icon location', () => {
     const student: Student = {
-      image: 'test.png',
-      school: 'TestSchool',
-      role: 'Test Role',
+      id: 'test-student.png',
+      affiliation: 'TestSchool',
+      occupation: 'TestRole',
     } as Student;
     expect(service.getRoleIconLocation(student)).toBe(
       '/en-US//assets/images/roles/TestRole.png'
@@ -113,9 +113,9 @@ describe('AssetService', () => {
 
   it('should fetch student icon using HTTP GET', () => {
     const student: Student = {
-      image: 'test.png',
-      school: 'TestSchool',
-      role: 'TestRole',
+      id: 'test-student.png',
+      affiliation: 'TestSchool',
+      occupation: 'TestRole',
     } as Student;
 
     service.getStudentIcon(student).subscribe();

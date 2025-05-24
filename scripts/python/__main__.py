@@ -8,7 +8,7 @@ from sanitization import check_key_and_id_field, delete_saved_info
 INCLUDED_FIELDS = ['school', 'role', 'damageType', 'exSkillCost', 'weaponType', 'releaseDate']
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Download Blue Archive character information and check for conflicts.")
+    parser = argparse.ArgumentParser(description="Download My Hero Academia character information and check for conflicts.")
     parser.add_argument('--no-cache', action='store_true', help='Disable cache and do a fresh fetch.')
     args = parser.parse_args()
 

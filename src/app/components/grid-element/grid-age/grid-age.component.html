@@ -1,0 +1,19 @@
+<ba-grid-element-container
+  [isFlipped]="getFlipString()"
+  [animationDelayMs]="animationDelayMs"
+  [won]="guess === answer"
+>
+  @if (guess && answer) {
+  <div
+    [ngClass]="[
+      (guess.age === -1 || answer.age === -1) ? 'text-black' : 'text-white',
+      correctGuess() ? 'correct' : 'incorrect',
+      (answer.age > guess.age && answer.age !== -1 && guess.age !== -1) ? 'arrow-up' : '',
+      (answer.age < guess.age && answer.age !== -1 && guess.age !== -1) ? 'arrow-down' : ''
+  ]"
+    class="flex items-center justify-center text-center p-2 overflow-hidden h-full"
+  >
+    <span class="block">{{ age }}</span>
+  </div>
+  }
+</ba-grid-element-container>

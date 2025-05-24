@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Bardle": {
+    "Mhadle": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -16,22 +16,13 @@
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
-          "ja": {
-            "translation": "src/locale/messages.ja.xlf"
-          },
-          "zh": {
-            "translation": "src/locale/messages.zh-cn.xlf"
-          },
-          "ko": {
-            "translation": "src/locale/messages.ko.xlf"
-          }
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/bardle",
+            "outputPath": "dist/mhadle",
             "index": "src/index.html",
             "localize": true,
             "browser": "src/main.ts",
@@ -80,45 +71,6 @@
                 }
               ]
             },
-            "ja": {
-              "localize": ["ja"],
-              "index": {
-                "input": "src/locale/index/index.ja.html",
-                "output": "index.html"
-              },
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.ja.ts"
-                }
-              ]
-            },
-            "zh": {
-              "localize": ["zh"],
-              "index": {
-                "input": "src/locale/index/index.zh.html",
-                "output": "index.html"
-              },
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.zh.ts"
-                }
-              ]
-            },
-            "ko": {
-              "localize": ["ko"],
-              "index": {
-                "input": "src/locale/index/index.ko.html",
-                "output": "index.html"
-              },
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.ko.ts"
-                }
-              ]
-            },
             "en-US": {}
           },
           "defaultConfiguration": "production"
@@ -127,19 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Bardle:build:production"
+              "buildTarget": "Mhadle:build:production"
             },
             "development": {
-              "buildTarget": "Bardle:build:development"
-            },
-            "ja": {
-              "buildTarget": "Bardle:build:development,ja"
-            },
-            "zh": {
-              "buildTarget": "Bardle:build:development,zh"
-            },
-            "ko": {
-              "buildTarget": "Bardle:build:development,ko"
+              "buildTarget": "Mhadle:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -180,6 +123,9 @@
     }
   },
   "cli": {
-    "schematicCollections": ["angular-eslint"]
+    "schematicCollections": [
+      "angular-eslint"
+    ],
+    "analytics": false
   }
 }

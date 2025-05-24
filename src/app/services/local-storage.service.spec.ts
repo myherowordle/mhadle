@@ -75,6 +75,7 @@ describe('LocalStorageService', () => {
         },
         doy: -1,
         lastList: DEFAULT_STUDENT_LIST,
+        giveUp: false,
       });
     });
 
@@ -86,6 +87,7 @@ describe('LocalStorageService', () => {
         },
         doy: 5,
         lastList: DEFAULT_STUDENT_LIST,
+        giveUp: false,
       };
       spyOn(service, 'getLocalStorage').and.returnValue(
         JSON.stringify(mockGuess)

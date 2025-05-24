@@ -4,6 +4,7 @@ export interface GuessCookie {
   guesses: Record<string, string[]>;
   doy: number;
   lastList: StudentList;
+  giveUp: boolean;
 }
 
 export interface ChangeLogCookie {

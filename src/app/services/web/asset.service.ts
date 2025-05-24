@@ -29,7 +29,7 @@ export class AssetService {
   }
 
   getStudentIconLocation(student: Student) {
-    return `${this.fullImagePath}/characters/${student.image}`;
+    return `${this.fullImagePath}/characters/${student.id}.png`;
   }
 
   getIconLocation(icon: string) {
@@ -52,12 +52,13 @@ export class AssetService {
   }
 
   getSchoolIconLocation(student: Student) {
-    const school = sanitizeSchool(student.school);
+    const school = sanitizeSchool(student.affiliation);//TODO
     return `${this.fullImagePath}/schools/${school.replace(' ', '')}.png`;
   }
 
   getRoleIconLocation(student: Student) {
-    return `${this.fullImagePath}/roles/${student.role.replace(' ', '')}.png`;
+    return `${this.fullImagePath}/roles/Tank.png`;
+    //return `${this.fullImagePath}/roles/${student.occupation.replace(' ', '')}.png`;//TODO
   }
 
   getChangeLogsLocation() {
@@ -78,6 +79,6 @@ export class AssetService {
     const formattedDate = `${String(today.getDate()).padStart(2, '0')}.${String(
       today.getUTCMonth() + 1
     ).padStart(2, '0')}.${today.getUTCFullYear()}`;
-    return this.getBackgroundLocation(hashCode(formattedDate));
+    return this.getBackgroundLocation((hashCode(formattedDate)%7+1));
   }
 }

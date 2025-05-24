@@ -1,22 +1,18 @@
 export interface Student {
   id: string;
   fullName: string;
-  shortName: string;
-  nativeName: string;
-  school: string;
-  damageType: string;
-  armorType: string;
-  role: string;
-  combatClass: string;
-  exSkillCost: number;
-  positioning: string;
-  height: number;
-  outfit: string;
-  releaseDate: string;
-  weaponType: string;
-  image: string;
+  alias: string;
   birthday: string;
-  disabled: boolean;
+  age: number;
+  gender: string;
+  height: number;
+  hairColor: string;
+  eyeColor: string;
+  quirk: string;
+  quirkType: string;
+  occupation: string;
+  affiliation: string;
+  manga: number;
 }
 
 export type StudentData = Record<string, Student>;

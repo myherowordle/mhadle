@@ -1,55 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://bardle.net/</loc>
+        <loc>http://mhadle.vercel.app/</loc>
         <lastmod>2025-02-15</lastmod>
     </url>
     <url>
-        <loc>http://bardle.net/en-US</loc>
+        <loc>http://mhadle.vercel.app/en-US</loc>
         <lastmod>2025-02-15</lastmod>
     </url>
     <url>
-        <loc>http://bardle.net/ja</loc>
+        <loc>http://mhadle.vercel.app/en-US/about</loc>
         <lastmod>2025-02-15</lastmod>
     </url>
     <url>
-        <loc>http://bardle.net/cn</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/ko</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/en-US/about</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/en-US/contact</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/ja/about</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/ja/contact</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/cn/about</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/cn/contact</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/ko/about</loc>
-        <lastmod>2025-02-15</lastmod>
-    </url>
-    <url>
-        <loc>http://bardle.net/ko/contact</loc>
+        <loc>http://mhadle.vercel.app/en-US/contact</loc>
         <lastmod>2025-02-15</lastmod>
     </url>
 </urlset>
