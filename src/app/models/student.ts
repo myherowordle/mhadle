@@ -13,6 +13,7 @@ export interface Student {
   occupation: string;
   affiliation: string;
   manga: number;
+  vigilante: number;
 }
 
 export type StudentData = Record<string, Student>;

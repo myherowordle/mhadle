@@ -60,6 +60,11 @@ export class GridHeaderComponent {
     return $localize`:Release Date|Header for release date grid@@ReleaseDateGrid:Release Date`;
   }
 
+  get vigilante() {
+    return 'First Vigilante Chapter Appearance'
+    return $localize`:Release Date|Header for release date grid@@ReleaseDateGrid:Release Date`;
+  }
+
   get hairColor() {
     return 'Hair Color'
     return $localize`:Weapon Type|Header for weapon type grid@@WeaponTypeGrid:Weapon Type`;
@@ -72,5 +77,9 @@ export class GridHeaderComponent {
 
   get mangaClass() {
     return 'text-[0.7rem] md:text-sm'
+  }
+
+  get vigilanteClass() {
+    return 'text-[0.6rem] md:text-[0.8rem]'
   }
 }

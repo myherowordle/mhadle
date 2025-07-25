@@ -1,5 +1,6 @@
 export enum StudentList {
-  JAPAN = 'japan',
+  JAPAN = 'my hero academia',
+  VIGILANTE = 'my hero academia: vigilante',
   GLOBAL = 'global',
 }
 

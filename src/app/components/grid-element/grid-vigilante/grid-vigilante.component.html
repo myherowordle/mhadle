@@ -1,0 +1,19 @@
+<ba-grid-element-container
+  [isFlipped]="getFlipString()"
+  [animationDelayMs]="animationDelayMs"
+  [won]="guess === answer"
+>
+  @if (guess && answer) {
+  <div
+    [ngClass]="[
+    (guess.vigilante === -1 || answer.vigilante === -1) ? 'text-black' : 'text-white',
+    correctGuess() ? 'correct' : 'incorrect',
+    (answer.vigilante > guess.vigilante && answer.vigilante !== -1 && guess.vigilante !== -1) ? 'arrow-up' : '',
+    (answer.vigilante < guess.vigilante && answer.vigilante !== -1 && guess.vigilante !== -1) ? 'arrow-down' : ''
+  ]"
+    class="flex items-center justify-center text-center p-2 overflow-hidden h-full"
+  >
+    <span class="block">{{ vigilante }}</span>
+  </div>
+  }
+</ba-grid-element-container>

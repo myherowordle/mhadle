@@ -10,6 +10,7 @@ import { GridComponent } from '../../components/grid/grid.component';
 import { GuessInputComponent } from '../../components/guess-input/guess-input.component';
 import { InfinteModeComponent } from '../../components/infinte-mode/infinte-mode.component';
 import { GiveUpComponent } from '../../components/give-up/give-up.component';
+import { StudentListSelectionComponent } from '../../components/student-list-selection/student-list-selection.component';
 import { ResultComponent } from '../../components/result/result.component';
 import { TutorialComponent } from '../../components/tutorial/tutorial.component';
 import { YesterdaysStudentComponent } from '../../components/yesterdays-student/yesterdays-student.component';
@@ -24,6 +25,7 @@ import { AssetService } from '../../services/web/asset.service';
   selector: 'ba-game',
   imports: [
     GiveUpComponent,
+    StudentListSelectionComponent,
     GridComponent,
     GuessInputComponent,
     InfinteModeComponent,

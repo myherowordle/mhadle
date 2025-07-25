@@ -17,7 +17,7 @@ export class GridMangaComponent extends GridElementComponent {
 
   get manga() {
     if (this.guess?.manga == -1) {
-      return "Other";
+      return "None";
     }
     return this.guess?.manga;
   }

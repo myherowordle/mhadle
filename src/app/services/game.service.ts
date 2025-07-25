@@ -88,12 +88,11 @@ export class GameService {
       return;
     } 
     this.gameState.result[this.gameState.activeList].giveUp = true;
-    console.log('red', this.gameState);
     this.gameStateChange.next(this.gameState);
     if (!this.infiniteMode) {
       const guesses = { ...this.gameState.guesses };
-      console.log('blue', this.localStorage.getGuess());
       guesses.giveUp = true;
+      guesses.lastList = this.gameState.activeList;
       this.setGuess(guesses);
     }
   }
@@ -110,6 +109,7 @@ export class GameService {
     }
     const guesses = { ...this.gameState.guesses };
     guesses.guesses[this.gameState.activeList].push(guess);
+    guesses.lastList = this.gameState.activeList;
     this.setGuess(guesses);
     if (guess === this.gameState.answer[this.gameState.activeList]) {
       this.setResult({
@@ -213,8 +213,9 @@ export class GameService {
   private createEmptyGuess(lastList?: StudentList) {
     return {
       guesses: {
-        japan: [],
-        global: [],
+        'my hero academia': [],
+        'global': [],
+        'my hero academia: vigilante': [],
       },
       doy: this.doy,
       lastList: lastList ?? this.createInitialListSelection(),
@@ -247,6 +248,12 @@ export class GameService {
       won: won,
       giveUp: guess.giveUp,
     };
+    guesses = guess.guesses[StudentList.VIGILANTE];
+    won = guesses.includes(gameAnswer[StudentList.VIGILANTE]);
+    gameResult[StudentList.VIGILANTE] = {
+      won: won,
+      giveUp: guess.giveUp,
+    };
     return gameResult;
   }
 
@@ -259,6 +266,9 @@ export class GameService {
       todaysStudents[StudentList.GLOBAL] = this.studentService.getRandomStudent(
         studentData[StudentList.GLOBAL]
       ).id;
+      todaysStudents[StudentList.VIGILANTE] = this.studentService.getRandomStudent(
+        studentData[StudentList.VIGILANTE]
+      ).id;
       return todaysStudents;
     }
     const todaysStudents: GameAnswer = {};
@@ -267,6 +277,9 @@ export class GameService {
     ).id;
     todaysStudents[StudentList.GLOBAL] = this.studentService.getTodaysStudent(
       studentData[StudentList.GLOBAL]
+    ).id;
+    todaysStudents[StudentList.VIGILANTE] = this.studentService.getTodaysStudent(
+      studentData[StudentList.VIGILANTE]
     ).id;
     return todaysStudents;
   }
@@ -280,6 +293,10 @@ export class GameService {
     yesterdaysStudents[StudentList.GLOBAL] =
       this.studentService.getYesterdaysStudent(
         studentData[StudentList.GLOBAL]
+      ).id;
+    yesterdaysStudents[StudentList.VIGILANTE] =
+      this.studentService.getYesterdaysStudent(
+        studentData[StudentList.VIGILANTE]
       ).id;
     return yesterdaysStudents;
   }

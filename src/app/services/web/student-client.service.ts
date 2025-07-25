@@ -27,4 +27,13 @@ export class StudentClientService {
       `${StudentClientService.ASSET_PREFIX_PATH}/assets/character_info_gl.json`
     );
   }
+
+  getStudentsVi() {
+    if (!environment.production) {
+      return this.http.get<StudentData>('/assets/character_info_vigilante.json');
+    }
+    return this.http.get<StudentData>(
+      `${StudentClientService.ASSET_PREFIX_PATH}/assets/character_info_vigilante.json`
+    );
+  }
 }

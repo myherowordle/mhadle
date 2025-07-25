@@ -57,12 +57,14 @@ export class StudentService {
     }
     const globalData = this.studentClientService.getStudentsGl();
     const japanData = this.studentClientService.getStudentsJp();
+    const vigilanteData = this.studentClientService.getStudentsVi();
 
-    return forkJoin([globalData, japanData]).pipe(
+    return forkJoin([globalData, japanData, vigilanteData]).pipe(
       map((data) => {
         return {
           [StudentList.GLOBAL]: data[0],
           [StudentList.JAPAN]: data[1],
+          [StudentList.VIGILANTE]: data[2],
         };
       }),
       tap((studentData: StudentListData) => (this.students = studentData))

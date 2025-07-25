@@ -13,6 +13,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": 7,
         "manga": 3
     },
     "Ken_Ishiyama": {
@@ -29,6 +30,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 21
     },
     "Ochaco_Uraraka": {
@@ -45,6 +47,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 3
     },
     "Ryo_Inui": {
@@ -61,6 +64,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 20
     },
     "Higari_Maijima": {
@@ -77,6 +81,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 20
     },
     "Ectoplasm": {
@@ -93,6 +98,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 20
     },
     "Snipe": {
@@ -109,6 +115,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": 4,
         "manga": 20
     },
     "Chiyo_Shuzenji": {
@@ -125,6 +132,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 4
     },
     "Anan_Kurose": {
@@ -141,6 +149,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": 5,
         "manga": 3
     },
     "Sekijiro_Kan": {
@@ -157,6 +166,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 20
     },
     "Lunch_Rush": {
@@ -173,6 +183,7 @@
         "quirkType": "null",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 7
     },
     "Nezu": {
@@ -189,6 +200,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": -1,
         "manga": 3
     },
     "Hizashi_Yamada": {
@@ -205,7 +217,8 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
-        "manga": 4
+        "vigilante": 4,
+        "manga": 3
     },
     "Mina_Ashido": {
         "id": "Mina_Ashido",
@@ -221,6 +234,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 6
     },
     "Shota_Aizawa": {
@@ -237,7 +251,8 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
-        "manga": 2
+        "vigilante": 2,
+        "manga": 5
     },
     "Yuga_Aoyama": {
         "id": "Yuga_Aoyama",
@@ -253,6 +268,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 3
     },
     "Tsuyu_Asui": {
@@ -269,6 +285,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 5
     },
     "Nemuri_Kayama": {
@@ -285,7 +302,8 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
-        "manga": 5
+        "vigilante": 5,
+        "manga": 3
     },
     "Sorahiko_Torino": {
         "id": "Sorahiko_Torino",
@@ -301,6 +319,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 46
     },
     "Toshinori_Yagi": {
@@ -317,6 +336,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High Staff",
+        "vigilante": 1,
         "manga": 1
     },
     "Mashirao_Ojiro": {
@@ -333,6 +353,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 5
     },
     "Denki_Kaminari": {
@@ -349,6 +370,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 5
     },
     "Koji_Koda": {
@@ -365,6 +387,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 5
     },
     "Rikido_Sato": {
@@ -381,6 +404,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 7
     },
     "Eijiro_Kirishima": {
@@ -397,6 +421,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 3
     },
     "Mezo_Shoji": {
@@ -413,6 +438,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 3
     },
     "Hanta_Sero": {
@@ -429,6 +455,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 6
     },
     "Kyoka_Jiro": {
@@ -445,6 +472,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 5
     },
     "Toru_Hagakure": {
@@ -461,6 +489,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 5
     },
     "Itsuka_Kendo": {
@@ -477,6 +506,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Kinoko_Komori": {
@@ -493,6 +523,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Ibara_Shiozaki": {
@@ -509,6 +540,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 5
     },
     "Yui_Kodai": {
@@ -525,6 +557,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Yosetsu_Awase": {
@@ -541,6 +574,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Shihai_Kuroiro": {
@@ -557,6 +591,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Sen_Kaibara": {
@@ -573,6 +608,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Togaru_Kamakiri": {
@@ -589,6 +625,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Momo_Yaoyorozu": {
@@ -605,6 +642,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 6
     },
     "Katsuki_Bakugo": {
@@ -621,6 +659,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 1
     },
     "Shoto_Todoroki": {
@@ -637,6 +676,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 6
     },
     "Fumikage_Tokoyami": {
@@ -653,6 +693,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 3
     },
     "Minoru_Mineta": {
@@ -669,6 +710,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 5
     },
     "Izuku_Midoriya": {
@@ -685,6 +727,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 1
     },
     "Jurota_Shishida": {
@@ -701,6 +744,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Nirengeki_Shoda": {
@@ -717,6 +761,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Pony_Tsunotori": {
@@ -733,6 +778,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Kosei_Tsuburaba": {
@@ -749,6 +795,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Tetsutetsu_Tetsutetsu": {
@@ -765,6 +812,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 23
     },
     "Setsuna_Tokage": {
@@ -781,6 +829,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Manga_Fukidashi": {
@@ -797,6 +846,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Juzo_Honenuki": {
@@ -813,6 +863,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Kojiro_Bondo": {
@@ -829,6 +880,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Reiko_Yanagi": {
@@ -845,6 +897,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Neito_Monoma": {
@@ -861,6 +914,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 26
     },
     "Hitoshi_Shinso": {
@@ -877,6 +931,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-A",
+        "vigilante": -1,
         "manga": 23
     },
     "Hiryu_Rin": {
@@ -893,6 +948,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 1-B",
+        "vigilante": -1,
         "manga": 25
     },
     "Mei_Hatsume": {
@@ -909,6 +965,7 @@
         "quirkType": "Mutant",
         "occupation": "Civilian",
         "affiliation": "U.A. High 1-H",
+        "vigilante": -1,
         "manga": 25
     },
     "Shinya_Kamihara": {
@@ -925,7 +982,8 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
-        "manga": 47
+        "vigilante": 47,
+        "manga": 84
     },
     "Tsunagu_Hakamada": {
         "id": "Tsunagu_Hakamada",
@@ -941,7 +999,8 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
-        "manga": 5
+        "vigilante": 5,
+        "manga": 3
     },
     "Enji_Todoroki": {
         "id": "Enji_Todoroki",
@@ -957,6 +1016,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": 1,
         "manga": 1
     },
     "Mirio_Togata": {
@@ -973,6 +1033,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 3-A",
+        "vigilante": -1,
         "manga": 121
     },
     "Nejire_Hado": {
@@ -989,6 +1050,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 3-A",
+        "vigilante": -1,
         "manga": 122
     },
     "Tamaki_Amajiki": {
@@ -1005,6 +1067,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "U.A. High 3-A",
+        "vigilante": -1,
         "manga": 122
     },
     "Emi_Fukukado": {
@@ -1021,6 +1084,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Ketsubutsu Academy High School",
+        "vigilante": -1,
         "manga": 103
     },
     "Seiji_Shishikura": {
@@ -1037,6 +1101,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Shiketsu High School",
+        "vigilante": -1,
         "manga": 102
     },
     "Nagamasa_Mora": {
@@ -1053,6 +1118,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "Shiketsu High School",
+        "vigilante": -1,
         "manga": 102
     },
     "Camie_Utsushimi": {
@@ -1069,6 +1135,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Shiketsu High School",
+        "vigilante": -1,
         "manga": 102
     },
     "Inasa_Yoarashi": {
@@ -1085,6 +1152,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Shiketsu High School",
+        "vigilante": -1,
         "manga": 102
     },
     "Yu_Takeyama": {
@@ -1101,6 +1169,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 1
     },
     "Taishiro_Toyomitsu": {
@@ -1117,7 +1186,8 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
-        "manga": 31
+        "vigilante": 31,
+        "manga": 132
     },
     "Shinji_Nishiya": {
         "id": "Shinji_Nishiya",
@@ -1133,6 +1203,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 1
     },
     "Susugu_Mitarai": {
@@ -1149,6 +1220,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 184
     },
     "Rumi_Usagiyama": {
@@ -1165,7 +1237,8 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
-        "manga": 47
+        "vigilante": 47,
+        "manga": 184
     },
     "Kugo_Sakamata": {
         "id": "Kugo_Sakamata",
@@ -1181,6 +1254,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 86
     },
     "Ryuko_Tatsuma": {
@@ -1197,6 +1271,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 131
     },
     "Death_Arms": {
@@ -1213,6 +1288,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": 5,
         "manga": 1
     },
     "Gunhead": {
@@ -1229,6 +1305,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 46
     },
     "Shino_Sosaki": {
@@ -1245,6 +1322,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Wild, Wild Pussycats",
+        "vigilante": -1,
         "manga": 70
     },
     "Ken_Takagi": {
@@ -1261,6 +1339,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 135
     },
     "Masaki_Mizushima": {
@@ -1277,6 +1356,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 47
     },
     "Ryuko_Tsuchikawa": {
@@ -1293,6 +1373,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Wild, Wild Pussycats",
+        "vigilante": -1,
         "manga": 70
     },
     "Yawara_Chatora": {
@@ -1309,6 +1390,7 @@
         "quirkType": "Transformation",
         "occupation": "Pro Hero",
         "affiliation": "Wild, Wild Pussycats",
+        "vigilante": -1,
         "manga": 72
     },
     "Tomoko_Shiretoko": {
@@ -1325,6 +1407,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Wild, Wild Pussycats",
+        "vigilante": -1,
         "manga": 72
     },
     "Keigo_Takami": {
@@ -1341,6 +1424,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Hero Public Safety Commission",
+        "vigilante": -1,
         "manga": 184
     },
     "Tensei_Ida": {
@@ -1351,13 +1435,14 @@
         "age": 30,
         "gender": "Male",
         "height": 183,
-        "hairColor": "Black",
+        "hairColor": "Blue",
         "eyeColor": "Blue",
         "quirk": "Engine",
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
-        "affiliation": "Independant",
-        "manga": 5
+        "affiliation": "Team Idaten",
+        "vigilante": 5,
+        "manga": 12
     },
     "Native": {
         "id": "Native",
@@ -1373,6 +1458,7 @@
         "quirkType": "null",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 50
     },
     "Cathleen_Bate": {
@@ -1389,6 +1475,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 303
     },
     "Nana_Shimura": {
@@ -1405,6 +1492,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 33
     },
     "Kaina_Tsutsumi": {
@@ -1421,6 +1509,7 @@
         "quirkType": "Transformation",
         "occupation": "Villain",
         "affiliation": "Hero Public Safety Commission",
+        "vigilante": -1,
         "manga": 297
     },
     "Mirai_Sasaki": {
@@ -1437,6 +1526,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 124
     },
     "Daigoro_Banjo": {
@@ -1453,6 +1543,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 192
     },
     "En_Tayutai": {
@@ -1469,6 +1560,7 @@
         "quirkType": "Emitter",
         "occupation": "Pro Hero",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 33
     },
     "Sludge_Villain": {
@@ -1485,23 +1577,8 @@
         "quirkType": "Mutant",
         "occupation": "Villain",
         "affiliation": "Paranormal Liberation Front",
+        "vigilante": -1,
         "manga": 1
-    },
-    "David_Shield": {
-        "id": "David_Shield",
-        "fullName": "David Shield",
-        "alias": "null",
-        "birthday": "December 1",
-        "age": -1,
-        "gender": "Male",
-        "height": 185,
-        "hairColor": "Brown",
-        "eyeColor": "Blue",
-        "quirk": "Squirmy Fingers",
-        "quirkType": "Mutant",
-        "occupation": "Sidekick",
-        "affiliation": "Independant",
-        "manga": -1
     },
     "Moe_Kamiji": {
         "id": "Moe_Kamiji",
@@ -1517,6 +1594,7 @@
         "quirkType": "Mutant",
         "occupation": "Pro Hero",
         "affiliation": "Endeavor agency",
+        "vigilante": -1,
         "manga": 245
     },
     "Danjuro_Tobita": {
@@ -1533,6 +1611,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 169
     },
     "Giant_Villain": {
@@ -1549,6 +1628,7 @@
         "quirkType": "Transformation",
         "occupation": "Villain",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 1
     },
     "Manami_Aiba": {
@@ -1565,6 +1645,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 170
     },
     "Chizome_Akaguro": {
@@ -1581,7 +1662,8 @@
         "quirkType": "Emitter",
         "occupation": "Vigilante",
         "affiliation": "Independant",
-        "manga": 9
+        "vigilante": 9,
+        "manga": 41
     },
     "Goto_Imasuji": {
         "id": "Goto_Imasuji",
@@ -1597,6 +1679,7 @@
         "quirkType": "Transformation",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 72
     },
     "Dictator": {
@@ -1613,6 +1696,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Paranormal Liberation Front",
+        "vigilante": -1,
         "manga": 318
     },
     "Nine": {
@@ -1629,23 +1713,8 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Villain Factory",
+        "vigilante": -1,
         "manga": 222
-    },
-    "Valdo_Gollini": {
-        "id": "Valdo_Gollini",
-        "fullName": "Valdo Gollini",
-        "alias": "Dark Might",
-        "birthday": "June 10",
-        "age": -1,
-        "gender": "Male",
-        "height": 215,
-        "hairColor": "Black",
-        "eyeColor": "Green",
-        "quirk": "Alchemy",
-        "quirkType": "Emitter",
-        "occupation": "Mafia Boss",
-        "affiliation": "Gollini Family",
-        "manga": -1
     },
     "All_For_One": {
         "id": "All_For_One",
@@ -1661,7 +1730,8 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Villain Factory",
-        "manga": 75
+        "vigilante": 6,
+        "manga": 59
     },
     "Kurogiri": {
         "id": "Kurogiri",
@@ -1677,7 +1747,8 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
-        "manga": 90
+        "vigilante": 59,
+        "manga": 11
     },
     "Gigantomachia": {
         "id": "Gigantomachia",
@@ -1693,6 +1764,7 @@
         "quirkType": "Transformation",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 57
     },
     "Tomura_Shigaraki": {
@@ -1709,6 +1781,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 11
     },
     "Kyudai_Garaki": {
@@ -1725,6 +1798,7 @@
         "quirkType": "Transformation",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 1
     },
     "Kagero_Okuta": {
@@ -1741,7 +1815,8 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Independant",
-        "manga": 26
+        "vigilante": 26,
+        "manga": 57
     },
     "Himiko_Toga": {
         "id": "Himiko_Toga",
@@ -1757,6 +1832,7 @@
         "quirkType": "Transformation",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 57
     },
     "Shuichi_Iguchi": {
@@ -1773,6 +1849,7 @@
         "quirkType": "Mutant",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 57
     },
     "Dabi": {
@@ -1789,6 +1866,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 39
     },
     "Mustard": {
@@ -1805,6 +1883,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 57
     },
     "Kenji_Hikiishi": {
@@ -1821,6 +1900,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 73
     },
     "Johnny": {
@@ -1837,6 +1917,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 222
     },
     "Jin_Bubaigawara": {
@@ -1853,6 +1934,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 77
     },
     "Atsuhiro_Sako": {
@@ -1869,6 +1951,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 80
     },
     "Moonfish": {
@@ -1885,6 +1968,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "League of Villains",
+        "vigilante": -1,
         "manga": 73
     },
     "Koku_Hanabata": {
@@ -1901,6 +1985,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Meta Liberation Army",
+        "vigilante": -1,
         "manga": 218
     },
     "Chitose_Kizuki": {
@@ -1917,6 +2002,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Meta Liberation Army",
+        "vigilante": -1,
         "manga": 218
     },
     "Rikiya_Yotsubashi": {
@@ -1933,6 +2019,7 @@
         "quirkType": "Transformation",
         "occupation": "Villain",
         "affiliation": "Meta Liberation Army",
+        "vigilante": -1,
         "manga": 218
     },
     "Tomoyasu_Chikazoku": {
@@ -1949,6 +2036,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Meta Liberation Army",
+        "vigilante": -1,
         "manga": 218
     },
     "Geten": {
@@ -1965,6 +2053,7 @@
         "quirkType": "Emitter",
         "occupation": "Villain",
         "affiliation": "Meta Liberation Army",
+        "vigilante": -1,
         "manga": 218
     },
     "Kai_Chisaki": {
@@ -1981,6 +2070,7 @@
         "quirkType": "Emitter",
         "occupation": "Yakuza",
         "affiliation": "Shie Hassaikai",
+        "vigilante": -1,
         "manga": 115
     },
     "Hari_Kurono": {
@@ -1997,6 +2087,7 @@
         "quirkType": "Emitter",
         "occupation": "Yakuza",
         "affiliation": "Shie Hassaikai",
+        "vigilante": -1,
         "manga": 115
     },
     "Shin_Nemoto": {
@@ -2013,6 +2104,7 @@
         "quirkType": "Emitter",
         "occupation": "Yakuza",
         "affiliation": "Shie Hassaikai",
+        "vigilante": -1,
         "manga": 115
     },
     "Soramitsu_Tabe": {
@@ -2029,6 +2121,7 @@
         "quirkType": "Mutant",
         "occupation": "Yakuza",
         "affiliation": "Shie Hassaikai",
+        "vigilante": -1,
         "manga": 138
     },
     "Sansa_Tamagawa": {
@@ -2045,7 +2138,8 @@
         "quirkType": "Mutant",
         "occupation": "Member of the Police Force",
         "affiliation": "Police Force",
-        "manga": 3
+        "vigilante": 3,
+        "manga": 21
     },
     "Kenji_Tsuragamae": {
         "id": "Kenji_Tsuragamae",
@@ -2061,6 +2155,7 @@
         "quirkType": "Mutant",
         "occupation": "Chief of the Police Force",
         "affiliation": "Police Force",
+        "vigilante": -1,
         "manga": 56
     },
     "Naomasa_Tsukauchi": {
@@ -2077,7 +2172,8 @@
         "quirkType": "null",
         "occupation": "Detective",
         "affiliation": "Police Force",
-        "manga": 3
+        "vigilante": 3,
+        "manga": 11
     },
     "Madam_President": {
         "id": "Madam_President",
@@ -2093,6 +2189,7 @@
         "quirkType": "null",
         "occupation": "Civilian",
         "affiliation": "Hero Public Safety Commission",
+        "vigilante": -1,
         "manga": 185
     },
     "Hikage_Shinomori": {
@@ -2109,6 +2206,7 @@
         "quirkType": "Emitter",
         "occupation": "null",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 33
     },
     "Yokumiru_Mera": {
@@ -2125,6 +2223,7 @@
         "quirkType": "null",
         "occupation": "Civilian",
         "affiliation": "Hero Public Safety Commission",
+        "vigilante": -1,
         "manga": 103
     },
     "Yoichi_Shigaraki": {
@@ -2141,6 +2240,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "Independant",
+        "vigilante": -1,
         "manga": 33
     },
     "Eri": {
@@ -2157,6 +2257,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "None",
+        "vigilante": -1,
         "manga": 128
     },
     "Kota_Izumi": {
@@ -2173,6 +2274,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "Wild, Wild Pussycats",
+        "vigilante": -1,
         "manga": 70
     },
     "Tsubasa": {
@@ -2189,6 +2291,7 @@
         "quirkType": "Mutant",
         "occupation": "Civilian",
         "affiliation": "Villain Factory",
+        "vigilante": -1,
         "manga": 1
     },
     "Mitsuki_Bakugo": {
@@ -2205,6 +2308,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 96
     },
     "Masaru_Bakugo": {
@@ -2221,6 +2325,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 96
     },
     "Hisashi_Midoriya": {
@@ -2237,6 +2342,7 @@
         "quirkType": "Emitter",
         "occupation": "null",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 1
     },
     "Inko_Midoriya": {
@@ -2253,6 +2359,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": 1,
         "manga": 1
     },
     "Tomie_Takami": {
@@ -2269,6 +2376,7 @@
         "quirkType": "Mutant",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 299
     },
     "Takami": {
@@ -2285,6 +2393,7 @@
         "quirkType": "Mutant",
         "occupation": "Villain",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 299
     },
     "Rei_Todoroki": {
@@ -2301,6 +2410,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 31
     },
     "Kotaro_Shimura": {
@@ -2317,6 +2427,7 @@
         "quirkType": "null",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 95
     },
     "Hana_Shimura": {
@@ -2333,6 +2444,7 @@
         "quirkType": "null",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 222
     },
     "Fuyumi_Todoroki": {
@@ -2349,6 +2461,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 39
     },
     "Natsuo_Todoroki": {
@@ -2365,23 +2478,8 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 39
-    },
-    "Melissa_Shield": {
-        "id": "Melissa_Shield",
-        "fullName": "Merissa Shiirudo",
-        "alias": "null",
-        "birthday": "October 1",
-        "age": 17,
-        "gender": "Female",
-        "height": 169,
-        "hairColor": "Blonde",
-        "eyeColor": "Blue",
-        "quirk": "Quirkless",
-        "quirkType": "None",
-        "occupation": "Civilian",
-        "affiliation": "I-Island Academy",
-        "manga": -1
     },
     "Rody_Soul": {
         "id": "Rody_Soul",
@@ -2397,6 +2495,7 @@
         "quirkType": "Emitter",
         "occupation": "Civilian",
         "affiliation": "null",
+        "vigilante": -1,
         "manga": 384
     }
 }

@@ -34,7 +34,6 @@ export class GridComponent implements OnInit, OnDestroy {
         this.cdr.markForCheck();
       })
     );
-    console.log(this.guesses)
   }
 
   ngOnDestroy() {

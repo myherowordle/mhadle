@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Student } from '../../models/student';
 import { StudentList } from '../../models/student-list';
 import { GridMangaComponent } from '../grid-element/grid-manga/grid-manga.component';
+import { GridVigilanteComponent } from '../grid-element/grid-vigilante/grid-vigilante.component';
 import { GridOccupationComponent } from '../grid-element/grid-occupation/grid-occupation.component';
 import { GridAgeComponent } from '../grid-element/grid-age/grid-age.component';
 import { GridAliasComponent } from '../grid-element/grid-alias/grid-alias.component';
@@ -29,6 +30,7 @@ import { GridWeaponTypeComponent } from "../grid-element/grid-quirk-type/grid-qu
     GridAffiliationComponent,
     GridOccupationComponent,
     GridMangaComponent,
+    GridVigilanteComponent,
     GridWeaponTypeComponent
 ],
   templateUrl: './grid-row.component.html',

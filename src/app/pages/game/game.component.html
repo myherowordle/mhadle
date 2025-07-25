@@ -1,4 +1,7 @@
 <div class="pt-12">
+  <ba-student-list-selection
+    [disabled]="infiniteMode"
+  ></ba-student-list-selection>
   <ba-guess-input></ba-guess-input> 
   @if (won || giveUp || infiniteMode) {
     <ba-infinte-mode
