@@ -17,12 +17,18 @@ export class CopyButtonComponent {
   private readonly correctIcon = '🟩';
   private readonly incorrectIcon = '⬜';
   private readonly wantedFields = [
-    'school',
-    'role',
-    'damageType',
-    'weaponType',
-    'exSkillCost',
-    'releaseDate',
+    'alias',
+    'gender',
+    'age',
+    'hairColor',
+    'eyeColor',
+    'height',
+    'quirk',
+    'quirkType',
+    'affiliation',
+    'occupation',
+    'manga',
+    'vigilante',
   ];
 
   constructor(
@@ -51,11 +57,11 @@ export class CopyButtonComponent {
     });
     const daysSinceLaunch = timeActive();
 
-    let scoreReport = `Daily My Hero Academia Wordle #${daysSinceLaunch} ${date} on https://mhadle.net.\n`;
+    let scoreReport = `Daily My Hero Academia Wordle #${daysSinceLaunch} ${date} on https://mhadle.vercel.app.\n`;
     scoreReport += `Student list: ${this.gameService.getCurrentList()} students\n`;
     scoreReport += `I guessed the student in ${attempts} attempt${
       attempts > 1 ? 's' : ''
-    } and ${won ? 'won' : 'lost'}\n\n`;
+    } and ${won ? 'won' : 'gave up'}\n\n`;
 
     guessedStudents.forEach((guessedStudent) => {
       this.wantedFields.forEach((field) => {
